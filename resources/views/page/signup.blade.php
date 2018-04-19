@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="col-sm-3"></div>
 				@if(count($errors)>0)
-					<div class="alert alert-success">
+					<div class="alert alert-danger">
 						@foreach($errors -> all() as $err)
 						{{$err}}
 						<br>
