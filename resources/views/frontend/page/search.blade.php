@@ -1,4 +1,4 @@
-@extends('master')
+@extends('frontend.layouts.master')
 @section('content')
 	<div class="container" style="margin: auto">
 	<div id="content" class="space-top-none">
