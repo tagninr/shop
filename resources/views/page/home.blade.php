@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+@extends('master')
 @section('content')
 <div class="fullwidthbanner-container">
 	<div class="fullwidthbanner">

@@ -3,8 +3,7 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="widget">
-					<h4 class="widget-title">Instagram Feed</h4>
-					{{-- <div id="beta-instagram-feed"><div></div></div> --}}
+					<h4 class="widget-title">Instagram Feed</h4>					
 				</div>
 			</div>
 			<div class="col-sm-2">
