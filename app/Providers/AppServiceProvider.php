@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 use App\TypeProducts;
 use App\Cart;
 use Session;
@@ -15,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
+        
         view() -> composer('header', function($view){
             $type_product = TypeProducts::all();
             $view -> with('type_product', $type_product);           
