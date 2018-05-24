@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
 use App\BillDetail;
 use App\Bills;
 use App\Cart;
@@ -12,7 +14,6 @@ use App\User;
 use Auth;
 use Hash;
 use Session;
-use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
@@ -21,7 +22,7 @@ class PageController extends Controller
     	// print_r($slide);
     	// exit;
 
-    	$new_product = Products::where('new', 1) -> paginate(8);
+    	$new_product = Products::where('unit_price', '>=', 160000) -> paginate(8);
     	//dd($new_product);
 
     	$top_product = Products::where('promotion_price', '<>', 0) -> paginate(8);
@@ -35,8 +36,6 @@ class PageController extends Controller
     	$other_product = Products::where('id_type', '<>', $type)-> paginate(6);
     	$type_product = TypeProducts::where('id', $type)->get();
     	$list_type = TypeProducts::all();
-    	// print_r($type_product);
-    	// exit;
     	return view('page.product_type', compact('pro_with_type', 'other_product', 'type_product', 'list_type'));
     }
 
@@ -95,13 +94,13 @@ class PageController extends Controller
 
     	$cart = Session::get('cart');
     	$customer = new Customer;
+    	$customer -> id = $req -> id;
     	$customer -> name = $req -> name;
     	$customer -> gender = $req -> gender;
     	$customer -> email = $req -> email;
     	$customer -> address = $req -> address;
     	$customer -> phone_number = $req -> phone;
-    	$customer -> note = $req -> notes;
-    	$customer -> save();
+    	$customer -> update();
 
     	$bill = new Bills;
     	$bill -> id_customer = $customer -> id;
