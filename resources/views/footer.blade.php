@@ -3,7 +3,8 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="widget">
-					<h4 class="widget-title">Instagram Feed</h4>					
+					<h4 class="widget-title">Instagram Feed</h4>
+					<div id="beta-instagram-feed"></div>
 				</div>
 			</div>
 			<div class="col-sm-2">
@@ -49,7 +50,7 @@
 </div> <!-- #footer -->
 <div class="copyright">
 	<div class="container">
-		<p class="pull-left">Privacy policy. &copy; 2018</p>
+		<p class="pull-left">Copyright &copy; 2018 Topaz. All rights reserved.</p>
 		<p class="pull-right pay-options">
 			<a href="#"><img src="source/assets/dest/images/pay/master.jpg" alt="" /></a>
 			<a href="#"><img src="source/assets/dest/images/pay/pay.jpg" alt="" /></a>

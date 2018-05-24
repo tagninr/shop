@@ -45,7 +45,8 @@
 								@else
 									Trống
 								@endif
-								) <i class="fa fa-chevron-down"></i>
+									{{--<i class="fa fa-chevron-down"></i>--}}
+								)
 							</div>
 							<div class="beta-dropdown cart-body">						
 								@if(Session::has('cart'))

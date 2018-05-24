@@ -24,7 +24,7 @@
 <div class="container" style="margin: auto">
 	<div id="content" class="space-top-none">
 		<div class="main-content">
-			<div class="space40">&nbsp;</div>
+			<div class="space20">&nbsp;</div>
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="beta-products-list">
@@ -33,7 +33,6 @@
 							{{-- <p class="pull-left">Tìm thấy {{count($new_product)}} sản phẩm</p> --}}
 							<div class="clearfix"></div>
 						</div>
-
 						<div class="row">
 							@foreach($new_product as $new)
 								<div class="col-sm-3">
@@ -48,10 +47,10 @@
 											<a class="single-item-title" href="{{route('product-details', $new -> id)}}">{{$new -> name}}</a>
 											<p class="single-item-price" style="font-size: 15px">
 												@if($new -> promotion_price == 0)
-													<span class="flash-sale">{{number_format($new -> unit_price)}}</span>										
+													<span class="flash-sale">{{number_format($new -> unit_price, 0, ',', '.')}} &#x20ab;</span>
 												@else
-													<span class="flash-del">{{number_format($new -> unit_price)}}</span>
-													<span class="flash-sale">{{number_format($new -> promotion_price)}}</span>
+													<span class="flash-del">{{number_format($new -> unit_price, 0, ',', '.')}} &#x20ab;</span>
+													<span class="flash-sale">{{number_format($new -> promotion_price, 0, ',', '.')}} &#x20ab;</span>
 												@endif
 											</p>
 										</div>
@@ -59,7 +58,8 @@
 											<a class="add-to-cart pull-left" href="{{route('add-to-cart', $new -> id)}}"><i class="fa fa-shopping-cart"></i></a>
 											<a class="beta-btn primary" href="{{route('product-details', $new -> id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
 											<div class="clearfix"></div>
-										</div>										
+										</div>
+										<div class="space20">&nbsp;</div>										
 									</div>
 								</div>
 							@endforeach	
@@ -86,8 +86,8 @@
 											<div class="single-item-body">
 												<a class="single-item-title" href="{{route('product-details', $top -> id)}}">{{$top -> name}}</a>
 												<p class="single-item-price" style="font-size: 15px">
-													<span class="flash-del">{{number_format($top -> unit_price)}}</span>
-													<span class="flash-sale">{{number_format($top -> promotion_price)}}</span>
+													<span class="flash-del">{{number_format($top -> unit_price, 0, ',', '.')}} &#x20ab;</span>
+													<span class="flash-sale">{{number_format($top -> promotion_price, 0, ',', '.')}} &#x20ab;</span>
 												</p>
 											</div>
 											<div class="single-item-caption">
@@ -95,6 +95,7 @@
 												<a class="beta-btn primary" href="{{route('product-details', $top -> id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
 												<div class="clearfix"></div>
 											</div>
+											<div class="space20">&nbsp;</div>
 										@endif
 									</div>
 								</div>

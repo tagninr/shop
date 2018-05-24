@@ -50,18 +50,18 @@
 
 					<div class="form-block">
 						<label for="address">Địa chỉ*</label>
-						<input type="text" id="address" name="address" placeholder="Street Address" required>
+						<input type="text" id="address" name="address" placeholder="Địa chỉ" required>
 					</div>
 					
 
 					<div class="form-block">
 						<label for="phone">Điện thoại*</label>
-						<input type="text" id="phone" name="phone" required>
+						<input type="text" id="phone" name="phone" placeholder="Điện thoại" required>
 					</div>
 					
 					<div class="form-block">
 						<label for="notes">Ghi chú</label>
-						<textarea id="notes" name="notes"></textarea>
+						<textarea id="notes" name="notes" placeholder="Qui cách về đóng gói, hướng dẫn giao hàng, ..."></textarea>
 					</div>
 				</div>
 				<div class="col-sm-6">
