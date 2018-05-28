@@ -28,11 +28,11 @@
                                 <form class="form-horizontal">
                                     <div class="form-group">
                                         <label for="inputName" class="col-sm-1 control-label">Tên</label>
-                                        <div class="col-sm-4"><input type="text" class="form-control" id="inputName" placeholder="Tên sản phẩm" value="{{$product->name}}"></div>
+                                        <div class="col-sm-4"><input type="text" class="form-control" id="inputName" name="namePro" placeholder="Tên sản phẩm" value="{{$product->name}}"></div>
 
                                         <label for="inputCategory" class="col-sm-2 control-label">Danh mục</label>
                                         <div class="col-sm-4">
-                                            <select class="select2-selection__rendered form-control chosen-select" id="inputCategory" data-placeholder="Danh mục sản phẩm" name="cmbCategory">
+                                            <select class="select2-selection__rendered form-control chosen-select" id="inputCategory" name="cmbCategory" data-placeholder="Danh mục sản phẩm">
                                                 @foreach($category as $cat)
                                                     <option value="{{$cat->id}}"
                                                         @php if($cat->id == $type)
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="inputUnit" class="col-sm-1 control-label">Đơn vị</label>
-                                        <div class="col-sm-4"><input type="text" class="form-control" id="inputUnit" placeholder="Đơn vị tính" value="{{$product->unit}}"></div>
+                                        <div class="col-sm-4"><input type="text" class="form-control" id="inputUnit" name="unit" placeholder="Đơn vị tính" value="{{$product->unit}}"></div>
 
                                         <label for="inputImage" class="col-sm-2 control-label">Hình ảnh</label>
                                         <div class="col-sm-4">
@@ -60,7 +60,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="inputDescription" class="col-sm-1 control-label">Mô tả</label>
-                                        <div class="col-sm-4"><textarea class="form-control" id="inputDescription" placeholder="Mô tả sản phẩm">{{$product->description}}</textarea></div>
+                                        <div class="col-sm-4"><textarea class="form-control" id="inputDescription" name="description" placeholder="Mô tả sản phẩm">{{$product->description}}</textarea></div>
 
                                         <label for="inputStatus" class="col-sm-2 control-label">Trạng thái</label>
                                         <div class="col-sm-2">
@@ -73,7 +73,7 @@
                                             @endif
                                         </div>
                                         <div class="col-sm-2">
-                                            <button class="btn btn-warning" type="submit" href="{{URL::route('updateProduct', $product->id)}}" style="margin-left: 50%">Sửa</button>
+                                            <button class="btn btn-warning" type="submit" href="{{URL::route('updatePro', $product->id)}}" style="margin-left: 50%">Sửa</button>
                                         </div>
                                     </div>
                                 </form>

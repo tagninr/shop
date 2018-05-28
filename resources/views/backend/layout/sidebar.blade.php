@@ -47,7 +47,7 @@
                 <script language="javascript">
                     function loadPageProduct()
                     {
-                        window.location.href = "{{route('product')}}"
+                        window.location.href = "{{route('indexPro')}}"
                     }
                 </script>
             </li>
@@ -59,7 +59,7 @@
                 <script language="javascript">
                     function loadPageCategory()
                     {
-                        window.location.href = "{{route('category')}}"
+                        window.location.href = "{{route('indexCat')}}"
                     }
                 </script>
             </li>
@@ -71,7 +71,7 @@
                 <script language="javascript">
                     function loadPageBrand()
                     {
-                        window.location.href = "{{route('brand')}}"
+                        window.location.href = "{{route('indexBra')}}"
                     }
                 </script>
             </li>
@@ -83,7 +83,7 @@
                 <script language="javascript">
                     function loadPageUser()
                     {
-                        window.location.href = "{{route('user')}}"
+                        window.location.href = "{{route('indexUser')}}"
                     }
                 </script>
             </li>
@@ -95,7 +95,7 @@
                 <script language="javascript">
                     function loadPageCustomer()
                     {
-                        window.location.href = "{{route('customer')}}"
+                        window.location.href = "{{route('indexCus')}}"
                     }
                 </script>
             </li>
@@ -107,7 +107,7 @@
                 <script language="javascript">
                     function loadPageBill()
                     {
-                        window.location.href = "{{route('bill')}}"
+                        window.location.href = "{{route('indexBill')}}"
                     }
                 </script>
             </li>
@@ -122,7 +122,7 @@
                 <script language="javascript">
                     function loadPageBillDetail()
                     {
-                        window.location.href = "{{route('billdetail')}}"
+                        window.location.href = "{{route('indexBillDetail')}}"
                     }
                 </script>
             </li>

@@ -95,7 +95,7 @@
                                                         @endif
                                                     </td>
                                                     <td>
-                                                        <a href="{{URL::route('editProduct', $pro->id)}}">
+                                                        <a href="{{URL::route('editPro', $pro->id)}}">
                                                             <button class="btn btn-sm btn-warning" style="margin-right: 1em;"><i class="fa fa-pencil"></i></button>
                                                         </a>
                                                         <a onclick="return xacNhanXoa('Bạn có muốn xóa không ?')"
