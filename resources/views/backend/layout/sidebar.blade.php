@@ -28,7 +28,7 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">QUẢN LÝ</li>
             <li class="{{--active--}} treeview">
-                <a href="index" onclick="loadPageIndex()">
+                <a href="{{URL::route('index')}}" onclick="loadPageIndex()">
                     <i class="fa fa-dashboard"></i>
                     <span>Tổng quan</span>
                 </a>
@@ -40,7 +40,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="product" onclick="loadPageProduct()">
+                <a href="{{URL::route('indexPro')}}" onclick="loadPageProduct()">
                     <i class="fa fa-laptop"></i>
                     <span>Sản phẩm</span>
                 </a>
@@ -52,7 +52,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="category" onclick="loadPageCategory()">
+                <a href="{{URL::route('indexCat')}}" onclick="loadPageCategory()">
                     <i class="fa fa-th-large"></i>
                     <span>Danh mục</span>
                 </a>
@@ -64,7 +64,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="brand" onclick="loadPageBrand()">
+                <a href="{{URL::route('indexBra')}}" onclick="loadPageBrand()">
                     <i class="fa fa-bold"></i>
                     <span>Thương hiệu</span>
                 </a>
@@ -76,7 +76,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="user" onclick="loadPageUser()">
+                <a href="{{URL::route('indexUser')}}" onclick="loadPageUser()">
                     <i class="fa fa-users"></i>
                     <span>Tài khoản</span>
                 </a>
@@ -88,7 +88,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="customer" onclick="loadPageCustomer()">
+                <a href="{{URL::route('indexCus')}}" onclick="loadPageCustomer()">
                     <i class="fa fa-user-md"></i>
                     <span>Khách hàng</span>
                 </a>
@@ -100,7 +100,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="bill" onclick="loadPageBill()">
+                <a href="{{URL::route('indexBill')}}" onclick="loadPageBill()">
                     <i class="fa fa-shopping-cart"></i>
                     <span>Hóa đơn</span>
                 </a>
@@ -112,7 +112,7 @@
                 </script>
             </li>
             <li class="treeview">
-                <a href="billdetail" onclick="loadPageBillDetail()">
+                <a href="{{URL::route('indexBillDetail')}}" onclick="loadPageBillDetail()">
                     <i class="fa  fa-opencart"></i>
                     <span>Chi tiết hóa đơn</span>
                     <span class="pull-right-container">
